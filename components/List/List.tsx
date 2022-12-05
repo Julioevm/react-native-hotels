@@ -29,17 +29,7 @@ const List = () => {
   if (isLoading) {
     return <ActivityIndicator style={styles.loading} size="large" />;
   }
-  const renderItem = ({item}: {item: Hotel}) => (
-    <ListItem
-      key={item.id}
-      name={item.name}
-      stars={item.stars}
-      score={item.userRating}
-      price={item.price}
-      currency={item.currency}
-      gallery={item.gallery}
-    />
-  );
+  const renderItem = ({item}: {item: Hotel}) => <ListItem hotel={item} />;
   return (
     <View style={styles.container}>
       <FlatList

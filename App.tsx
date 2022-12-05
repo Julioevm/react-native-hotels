@@ -1,6 +1,10 @@
 import React from 'react';
-import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
-import List from './components/List/List';
+import {StatusBar, useColorScheme} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import ListScreen from './screens/ListScreen';
+import DetailsScreen from './screens/DetailsScreen';
+import {RootStackParamList} from './types';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -9,14 +13,19 @@ const App = () => {
     backgroundColor: isDarkMode ? 'gray' : 'white',
   };
 
+  const Stack = createNativeStackNavigator<RootStackParamList>();
+
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <NavigationContainer>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <List />
-    </SafeAreaView>
+      <Stack.Navigator>
+        <Stack.Screen name="Hotels" component={ListScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 

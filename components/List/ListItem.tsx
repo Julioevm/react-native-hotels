@@ -2,28 +2,35 @@ import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import StarRating from '../StarRating';
 import UserRating from '../UserRating';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {Hotel, RootStackParamList} from '../../types';
 
 interface Props {
-  name: string;
-  stars: number;
-  score: number;
-  price: number;
-  gallery: Array<string>;
-  currency: string;
+  hotel: Hotel;
 }
 
+type NavigationProps = NativeStackNavigationProp<RootStackParamList>;
+
 export default function ListItem(props: Props) {
-  const {name, stars, score, price, currency} = props;
+  const {name, stars, userRating, price, currency, gallery} = props.hotel;
+  const navigation = useNavigation<NavigationProps>();
+
+  function onPress() {
+    navigation.navigate('Details', {
+      hotel: props.hotel,
+    });
+  }
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.container}>
         <View>
-          <Image style={styles.image} source={{uri: props.gallery[0]}} />
+          <Image style={styles.image} source={{uri: gallery[0]}} />
           <Text style={styles.name}>{name}</Text>
           <View style={styles.ratings}>
             <StarRating stars={stars} />
-            <UserRating rating={score} />
+            <UserRating rating={userRating} />
           </View>
           <Text style={styles.price}>{`${price} ${currency}`}</Text>
         </View>

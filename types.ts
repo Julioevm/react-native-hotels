@@ -28,3 +28,8 @@ export interface Hotel {
   price: number;
   currency: string;
 }
+
+export type RootStackParamList = {
+  Hotels: undefined;
+  Details: {hotel: Hotel};
+};
