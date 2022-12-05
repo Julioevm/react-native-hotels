@@ -5,6 +5,7 @@ import UserRating from '../UserRating';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {Hotel, RootStackParamList} from '../../types';
+import {getCurrencySymbol} from '../../utils/i18n';
 
 interface Props {
   hotel: Hotel;
@@ -32,7 +33,9 @@ export default function ListItem(props: Props) {
             <StarRating stars={stars} />
             <UserRating rating={userRating} />
           </View>
-          <Text style={styles.price}>{`${price} ${currency}`}</Text>
+          <Text style={styles.price}>{`${price} ${getCurrencySymbol(
+            currency,
+          )}`}</Text>
         </View>
       </View>
     </TouchableOpacity>
