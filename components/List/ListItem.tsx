@@ -1,6 +1,7 @@
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import StarRating from '../StarRating';
+import UserRating from '../UserRating';
 
 interface Props {
   name: string;
@@ -22,7 +23,7 @@ export default function ListItem(props: Props) {
           <Text style={styles.name}>{name}</Text>
           <View style={styles.ratings}>
             <StarRating stars={stars} />
-            <Text>User Rating: {score}</Text>
+            <UserRating rating={score} />
           </View>
           <Text style={styles.price}>{`${price} ${currency}`}</Text>
         </View>
