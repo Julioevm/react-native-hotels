@@ -10,7 +10,7 @@ function mapRatingToColor(rating: number): string {
   const hue = 120 * (rating / 10);
 
   // Return the CSS color string for the calculated hue value
-  return `hsl(${hue}, 100%, 50%)`;
+  return `hsl(${hue}, 100%, 70%)`;
 }
 
 export default function UserRating(props: Props) {
