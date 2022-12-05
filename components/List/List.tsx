@@ -36,6 +36,7 @@ const List = () => {
       stars={item.stars}
       score={item.userRating}
       price={item.price}
+      currency={item.currency}
       gallery={item.gallery}
     />
   );

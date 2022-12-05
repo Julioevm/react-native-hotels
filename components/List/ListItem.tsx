@@ -1,5 +1,6 @@
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
+import StarRating from '../StarRating';
 
 interface Props {
   name: string;
@@ -7,10 +8,11 @@ interface Props {
   score: number;
   price: number;
   gallery: Array<string>;
+  currency: string;
 }
 
 export default function ListItem(props: Props) {
-  const {name, stars, score, price} = props;
+  const {name, stars, score, price, currency} = props;
 
   return (
     <TouchableOpacity>
@@ -19,10 +21,10 @@ export default function ListItem(props: Props) {
           <Image style={styles.image} source={{uri: props.gallery[0]}} />
           <Text style={styles.name}>{name}</Text>
           <View style={styles.ratings}>
-            <Text>Stars: {stars}</Text>
-            <Text>User: {score}</Text>
+            <StarRating stars={stars} />
+            <Text>User Rating: {score}</Text>
           </View>
-          <Text style={styles.price}>{price}</Text>
+          <Text style={styles.price}>{`${price} ${currency}`}</Text>
         </View>
       </View>
     </TouchableOpacity>
@@ -41,6 +43,7 @@ const styles = StyleSheet.create({
   },
   ratings: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   name: {
     fontSize: 16,
