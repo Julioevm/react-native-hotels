@@ -22,7 +22,9 @@ export default function UserRating(props: Props) {
     <View style={styles.container}>
       <Text>User Rating</Text>
       <View style={[styles.ratingBox, {backgroundColor: color}]}>
-        <Text style={styles.rating}>{roundedRating}</Text>
+        <Text adjustsFontSizeToFit={true} style={styles.rating}>
+          {roundedRating}
+        </Text>
       </View>
     </View>
   );
