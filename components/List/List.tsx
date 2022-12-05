@@ -6,18 +6,13 @@ import ListItem from './ListItem';
 const ENDPOINT = 'https://run.mocky.io/v3/eef3c24d-5bfd-4881-9af7-0b404ce09507';
 
 const List = () => {
-  // State to track the loading status and the data from the API
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState<Array<Hotel> | undefined>(undefined);
 
-  // Function to fetch the data from the API
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      // Make the request to the API
       const response = await fetch(ENDPOINT);
-
-      // Process the response data
       const json = await response.json();
       setData(json);
     } catch (error) {
