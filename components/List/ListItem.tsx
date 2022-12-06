@@ -1,4 +1,4 @@
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import StarRating from '../StarRating';
 import UserRating from '../UserRating';
@@ -6,6 +6,9 @@ import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {Hotel, RootStackParamList} from '../../types';
 import {getCurrencySymbol} from '../../utils/i18n';
+import Carrousel from '../Carrousel';
+
+const SPACING = 16;
 
 interface Props {
   hotel: Hotel;
@@ -22,12 +25,13 @@ export default function ListItem(props: Props) {
       hotel: props.hotel,
     });
   }
+  const width = Dimensions.get('window').width - SPACING * 2;
 
   return (
-    <TouchableOpacity onPress={onPress}>
-      <View style={styles.container}>
-        <View>
-          <Image style={styles.image} source={{uri: gallery[0]}} />
+    <Pressable onPress={onPress} style={styles.container}>
+      <View>
+        <Carrousel gallery={gallery} width={width} />
+        <View style={styles.info}>
           <Text style={styles.name}>{name}</Text>
           <View style={styles.ratings}>
             <StarRating stars={stars} />
@@ -38,23 +42,26 @@ export default function ListItem(props: Props) {
           )}`}</Text>
         </View>
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 8,
-    paddingHorizontal: 16,
+    paddingBottom: SPACING / 2,
+    margin: SPACING,
+    borderRadius: 8,
+    backgroundColor: 'white',
+    overflow: 'hidden',
   },
-  image: {
-    width: '100%',
-    height: 120,
-    resizeMode: 'cover',
+  info: {
+    paddingHorizontal: SPACING,
+    paddingVertical: SPACING / 2,
   },
   ratings: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginVertical: SPACING / 2,
   },
   name: {
     fontSize: 16,
@@ -62,7 +69,7 @@ const styles = StyleSheet.create({
   },
   price: {
     textAlign: 'right',
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
   },
 });

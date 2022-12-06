@@ -1,22 +1,24 @@
 import * as React from 'react';
-import {Dimensions, Image, StyleSheet, View} from 'react-native';
+import {Image, StyleSheet, View} from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
 
 interface Props {
   gallery: string[];
+  width: number;
+  height?: number;
+  autoPlay?: boolean;
 }
 
 function Carrousel(props: Props) {
-  const {gallery} = props;
+  const {gallery, autoPlay = false, width, height = width / 2} = props;
 
-  const width = Dimensions.get('window').width;
   return (
     <View>
       <Carousel
         loop
         width={width}
-        height={width / 2}
-        autoPlay={true}
+        height={height}
+        autoPlay={autoPlay}
         data={gallery}
         scrollAnimationDuration={3000}
         renderItem={({index, item}) => (
@@ -24,6 +26,9 @@ function Carrousel(props: Props) {
             <Image style={styles.image} source={{uri: item}} />
           </View>
         )}
+        panGestureHandlerProps={{
+          activeOffsetX: [-10, 10],
+        }}
       />
     </View>
   );
