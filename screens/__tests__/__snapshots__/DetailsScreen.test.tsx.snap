@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsScreen should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "flex": 1,
+      "padding": 16,
+    }
+  }
+>
+  <Carrousel
+    autoPlay={true}
+    gallery={
+      Array [
+        "https://picsum.photos/200/300",
+      ]
+    }
+    width={718}
+  />
+  <Text
+    style={
+      Object {
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "marginVertical": 8,
+      }
+    }
+  >
+    Hotel
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingVertical": 8,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../assets/star-small.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 16,
+              "width": 16,
+            },
+            Object {
+              "tintColor": "orange",
+            },
+          ]
+        }
+      />
+      <Image
+        source={
+          Object {
+            "testUri": "../../../assets/star-small.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 16,
+              "width": 16,
+            },
+            Object {
+              "tintColor": "orange",
+            },
+          ]
+        }
+      />
+      <Image
+        source={
+          Object {
+            "testUri": "../../../assets/star-small.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 16,
+              "width": 16,
+            },
+            Object {
+              "tintColor": "orange",
+            },
+          ]
+        }
+      />
+      <Image
+        source={
+          Object {
+            "testUri": "../../../assets/star-small.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 16,
+              "width": 16,
+            },
+            Object {
+              "tintColor": "orange",
+            },
+          ]
+        }
+      />
+      <Image
+        source={
+          Object {
+            "testUri": "../../../assets/star-small.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 16,
+              "width": 16,
+            },
+            Object {
+              "tintColor": "gray",
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text>
+        User Rating
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderRadius": 4,
+              "height": 18,
+              "justifyContent": "center",
+              "marginLeft": 6,
+              "width": 18,
+            },
+            Object {
+              "backgroundColor": "hsl(48, 100%, 70%)",
+            },
+          ]
+        }
+      >
+        <Text
+          adjustsFontSizeToFit={true}
+          style={
+            Object {
+              "fontWeight": "bold",
+              "textAlign": "center",
+              "textAlignVertical": "center",
+            }
+          }
+        >
+          4
+        </Text>
+      </View>
+    </View>
+    <View>
+      <Text
+        style={
+          Object {
+            "fontSize": 20,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        100
+         
+        €
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      Object {
+        "textDecorationLine": "underline",
+      }
+    }
+  >
+    Calle de la Princesa, 1
+    , 
+    Madrid
+  </Text>
+  <View
+    style={
+      Object {
+        "backgroundColor": "lavenderblush",
+        "borderRadius": 8,
+        "marginTop": 8,
+        "padding": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Contact:
+    </Text>
+    <Text>
+      Phone: 
+      123456789
+    </Text>
+    <Text>
+      Email: 
+      test@mail.com
+    </Text>
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Check in:
+    </Text>
+    <Text>
+      From 
+      2020-01-01
+       to 
+      2020-01-02
+    </Text>
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Check out: 
+    </Text>
+    <Text>
+      From 
+      2020-01-01
+       to 
+      2020-01-02
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 16,
+      }
+    }
+  >
+    <View
+      accessibilityRole="button"
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#007AFF",
+                "fontSize": 18,
+                "margin": 8,
+                "textAlign": "center",
+              },
+              Object {
+                "color": "tomato",
+              },
+            ]
+          }
+        >
+          Book Now
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
