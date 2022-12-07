@@ -11,7 +11,7 @@ export default function IconButton(props: Props) {
   const {title, onPress, spaced} = props;
   return (
     <Pressable
-      android_ripple={{color: Theme.colors.white}}
+      android_ripple={{color: Theme.colors.secondary}}
       style={[styles.button, spaced ? styles.spaced : null]}
       onPress={onPress}
       accessibilityLabel={title}>
