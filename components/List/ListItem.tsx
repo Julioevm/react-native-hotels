@@ -7,8 +7,7 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {Hotel, RootStackParamList} from '../../types';
 import {getCurrencySymbol} from '../../utils/i18n';
 import Carrousel from '../common/Carrousel';
-
-const SPACING = 16;
+import {Theme} from '../../Theme';
 
 interface Props {
   hotel: Hotel;
@@ -25,10 +24,13 @@ export default function ListItem(props: Props) {
       hotel: props.hotel,
     });
   }
-  const width = Dimensions.get('window').width - SPACING * 2;
+  const width = Dimensions.get('window').width - Theme.sizes.large * 2;
 
   return (
-    <Pressable onPress={onPress} style={styles.container}>
+    <Pressable
+      onPress={onPress}
+      style={styles.container}
+      android_ripple={{color: Theme.colors.primary}}>
       <View>
         <Carrousel gallery={gallery} width={width} />
         <View style={styles.info}>
@@ -48,20 +50,20 @@ export default function ListItem(props: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: SPACING / 2,
-    margin: SPACING,
+    paddingBottom: Theme.sizes.small,
+    margin: Theme.sizes.large,
     borderRadius: 8,
     backgroundColor: 'white',
     overflow: 'hidden',
   },
   info: {
-    paddingHorizontal: SPACING,
-    paddingVertical: SPACING / 2,
+    paddingHorizontal: Theme.sizes.large,
+    paddingVertical: Theme.sizes.small,
   },
   ratings: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginVertical: SPACING / 2,
+    marginVertical: Theme.sizes.small,
   },
   name: {
     fontSize: 16,

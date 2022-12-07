@@ -27,7 +27,6 @@ const List = (props: Props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lavenderblush',
   },
   loading: {
     flex: 1,

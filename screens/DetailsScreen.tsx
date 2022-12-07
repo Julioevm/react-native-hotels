@@ -13,11 +13,10 @@ import StarRating from '../components/common/StarRating';
 import UserRating from '../components/common/UserRating';
 import Carrousel from '../components/common/Carrousel';
 import {getCurrencySymbol} from '../utils/i18n';
+import {Theme} from '../Theme';
 type Props = {
   route: RouteProp<RootStackParamList, 'Details'>;
 };
-
-const SPACING = 16;
 
 export default function DetailsScreen({route}: Props) {
   const {
@@ -33,7 +32,7 @@ export default function DetailsScreen({route}: Props) {
     currency,
   } = route.params.hotel;
 
-  const width = Dimensions.get('window').width - SPACING * 2;
+  const width = Dimensions.get('window').width - Theme.sizes.large * 2;
   const symbol = getCurrencySymbol(currency);
   const mapURL = `https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}&zoom=15`;
 
@@ -81,25 +80,26 @@ export default function DetailsScreen({route}: Props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: SPACING,
-    backgroundColor: 'white',
+    padding: Theme.sizes.large,
+    backgroundColor: Theme.colors.white,
+    paddingTop: 80,
   },
   section: {
     borderRadius: 8,
-    backgroundColor: 'lavenderblush',
-    padding: SPACING / 2,
-    marginTop: SPACING / 2,
+    backgroundColor: Theme.colors.background,
+    padding: Theme.sizes.small,
+    marginTop: Theme.sizes.small,
   },
   middleWrapper: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: SPACING / 2,
+    paddingVertical: Theme.sizes.small,
   },
   title: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginVertical: 8,
+    marginVertical: Theme.sizes.small,
   },
   price: {
     fontSize: 20,
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   buttonWrapper: {
-    marginTop: SPACING,
+    marginTop: Theme.sizes.large,
   },
   underline: {
     textDecorationLine: 'underline',

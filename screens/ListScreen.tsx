@@ -1,8 +1,9 @@
 import {StyleSheet, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import List from '../components/List/List';
-import Header from '../components/List/Header';
+import Header from '../components/Header/Header';
 import {Hotel} from '../types';
+import {Theme} from '../Theme';
 
 const ENDPOINT = 'https://run.mocky.io/v3/eef3c24d-5bfd-4881-9af7-0b404ce09507';
 
@@ -34,5 +35,6 @@ export default function ListScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Theme.colors.background,
   },
 });
