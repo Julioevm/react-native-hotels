@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem should render a ListItem 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "white",
+      "borderRadius": 8,
+      "margin": 16,
+      "overflow": "hidden",
+      "paddingBottom": 8,
+    }
+  }
+>
+  <View>
+    <Carrousel
+      gallery={
+        Array [
+          "https://picsum.photos/200/300",
+        ]
+      }
+      width={718}
+    />
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 16,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Hotel
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginVertical": 8,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../../assets/star-small.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 16,
+                  "width": 16,
+                },
+                Object {
+                  "tintColor": "orange",
+                },
+              ]
+            }
+          />
+          <Image
+            source={
+              Object {
+                "testUri": "../../../assets/star-small.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 16,
+                  "width": 16,
+                },
+                Object {
+                  "tintColor": "orange",
+                },
+              ]
+            }
+          />
+          <Image
+            source={
+              Object {
+                "testUri": "../../../assets/star-small.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 16,
+                  "width": 16,
+                },
+                Object {
+                  "tintColor": "orange",
+                },
+              ]
+            }
+          />
+          <Image
+            source={
+              Object {
+                "testUri": "../../../assets/star-small.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 16,
+                  "width": 16,
+                },
+                Object {
+                  "tintColor": "orange",
+                },
+              ]
+            }
+          />
+          <Image
+            source={
+              Object {
+                "testUri": "../../../assets/star-small.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 16,
+                  "width": 16,
+                },
+                Object {
+                  "tintColor": "gray",
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text>
+            User Rating
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderRadius": 4,
+                  "height": 18,
+                  "justifyContent": "center",
+                  "marginLeft": 6,
+                  "width": 18,
+                },
+                Object {
+                  "backgroundColor": "hsl(48, 100%, 70%)",
+                },
+              ]
+            }
+          >
+            <Text
+              adjustsFontSizeToFit={true}
+              style={
+                Object {
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                  "textAlignVertical": "center",
+                }
+              }
+            >
+              4
+            </Text>
+          </View>
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "textAlign": "right",
+          }
+        }
+      >
+        100 €
+      </Text>
+    </View>
+  </View>
+</View>
+`;

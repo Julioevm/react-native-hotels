@@ -2,6 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import {render, fireEvent} from '@testing-library/react-native';
 import {Hotel} from '../../../__mocks__/Hotel';
 import ListItem from '../ListItem';
+import React from 'react';
 
 jest.mock('@react-navigation/native', () => {
   return {
@@ -9,7 +10,14 @@ jest.mock('@react-navigation/native', () => {
   };
 });
 
+jest.mock('../../Carrousel.tsx', () => 'Carrousel');
+
 describe('ListItem', () => {
+  it('should render a ListItem', async () => {
+    const component = render(<ListItem hotel={Hotel} />);
+    expect(component).toMatchSnapshot();
+  });
+
   it('navigates to the "Details" route when pressed', () => {
     const navigation = {
       navigate: jest.fn(),
