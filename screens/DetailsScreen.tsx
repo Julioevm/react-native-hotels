@@ -1,4 +1,11 @@
-import {Button, Dimensions, StyleSheet, Text, View} from 'react-native';
+import {
+  Button,
+  Dimensions,
+  StyleSheet,
+  Text,
+  View,
+  Linking,
+} from 'react-native';
 import React from 'react';
 import {RouteProp} from '@react-navigation/native';
 import {RootStackParamList} from '../types';
@@ -6,7 +13,6 @@ import StarRating from '../components/StarRating';
 import UserRating from '../components/UserRating';
 import Carrousel from '../components/Carrousel';
 import {getCurrencySymbol} from '../utils/i18n';
-
 type Props = {
   route: RouteProp<RootStackParamList, 'Details'>;
 };
@@ -26,8 +32,16 @@ export default function DetailsScreen({route}: Props) {
     price,
     currency,
   } = route.params.hotel;
+
   const width = Dimensions.get('window').width - SPACING * 2;
   const symbol = getCurrencySymbol(currency);
+  const mapURL = `https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}&zoom=15`;
+
+  function onAddressPress() {
+    // Ideally we would embed a map component, but lets just use google maps for the exercise.
+    Linking.openURL(mapURL);
+  }
+
   return (
     <View style={styles.container}>
       <Carrousel gallery={gallery} width={width} autoPlay={true} />
@@ -41,7 +55,7 @@ export default function DetailsScreen({route}: Props) {
           </Text>
         </View>
       </View>
-      <Text style={styles.underline}>
+      <Text style={styles.underline} onPress={onAddressPress}>
         {location.address}, {location.city}
       </Text>
       <View style={styles.section}>

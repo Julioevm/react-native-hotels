@@ -196,6 +196,7 @@ exports[`DetailsScreen should render correctly 1`] = `
     </View>
   </View>
   <Text
+    onPress={[Function]}
     style={
       Object {
         "textDecorationLine": "underline",
