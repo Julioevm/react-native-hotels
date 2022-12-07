@@ -1,7 +1,7 @@
 import {render} from '@testing-library/react-native';
 import {Hotel} from '../../__mocks__/Hotel';
 import DetailsScreen from '../DetailsScreen';
-
+import React from 'react';
 jest.mock('../../components/common/Carrousel.tsx', () => 'Carrousel');
 
 describe('DetailsScreen', () => {

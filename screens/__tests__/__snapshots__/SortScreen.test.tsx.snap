@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortScreen should render 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View>
+    <Text>
+      Sort by:
+    </Text>
+    <View
+      style={
+        Object {
+          "marginVertical": 15,
+          "padding": 10,
+          "width": 250,
+        }
+      }
+    >
+      <RNCPicker
+        items={
+          Array [
+            Object {
+              "label": "Rating",
+              "testID": undefined,
+              "textColor": undefined,
+              "value": "rating",
+            },
+            Object {
+              "label": "Stars",
+              "testID": undefined,
+              "textColor": undefined,
+              "value": "stars",
+            },
+            Object {
+              "label": "Price",
+              "testID": undefined,
+              "textColor": undefined,
+              "value": "price",
+            },
+          ]
+        }
+        numberOfLines={1}
+        onChange={[Function]}
+        selectedIndex={0}
+        style={
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <Text>
+      Order:
+    </Text>
+    <View
+      style={
+        Object {
+          "marginVertical": 15,
+          "padding": 10,
+          "width": 250,
+        }
+      }
+    >
+      <RNCPicker
+        items={
+          Array [
+            Object {
+              "label": "Ascending",
+              "testID": undefined,
+              "textColor": undefined,
+              "value": "ascending",
+            },
+            Object {
+              "label": "Descending",
+              "testID": undefined,
+              "textColor": undefined,
+              "value": "descending",
+            },
+          ]
+        }
+        numberOfLines={1}
+        onChange={[Function]}
+        selectedIndex={1}
+        style={
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+  </View>
+  <View>
+    <Text>
+      Price Range:
+    </Text>
+    <Text>
+      0
+       - 
+      500
+    </Text>
+    <View
+      animationType="timing"
+      onLayout={[Function]}
+      onValueChange={[Function]}
+      step={1}
+      style={
+        Array [
+          Object {
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {},
+          Object {
+            "marginVertical": 15,
+            "padding": 10,
+            "width": 250,
+          },
+        ]
+      }
+      trackClickable={true}
+      trackMarks={Array []}
+      value={
+        Array [
+          0,
+          500,
+        ]
+      }
+    >
+      <View
+        onLayout={[Function]}
+        renderToHardwareTextureAndroid={true}
+        style={
+          Array [
+            Object {
+              "borderRadius": 2,
+              "height": 4,
+            },
+            Object {
+              "backgroundColor": "#b3b3b3",
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        collapsable={false}
+        renderToHardwareTextureAndroid={true}
+        style={
+          Object {
+            "backgroundColor": "#3f3f3f",
+            "borderRadius": 2,
+            "height": 4,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "width": 0,
+          }
+        }
+      />
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={
+          Object {
+            "backgroundColor": "tomato",
+            "borderRadius": 10,
+            "height": 20,
+            "opacity": 0,
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "translateX": 0,
+              },
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 20,
+          }
+        }
+      />
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={
+          Object {
+            "backgroundColor": "tomato",
+            "borderRadius": 10,
+            "height": 20,
+            "opacity": 0,
+            "position": "absolute",
+            "transform": Array [
+              Object {
+                "translateX": 0,
+              },
+              Object {
+                "translateY": 0,
+              },
+            ],
+            "width": 20,
+          }
+        }
+      />
+      <View
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "marginBottom": -20,
+              "marginLeft": -20,
+              "marginRight": -20,
+              "marginTop": -20,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+            Object {
+              "color": "tomato",
+            },
+          ]
+        }
+      >
+        Apply
+      </Text>
+    </View>
+  </View>
+  <Text
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "tomato",
+        "fontWeight": "bold",
+        "margin": 16,
+      }
+    }
+  >
+    Clear
+  </Text>
+</View>
+`;
