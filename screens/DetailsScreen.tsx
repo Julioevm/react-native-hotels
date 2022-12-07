@@ -14,6 +14,7 @@ import UserRating from '../components/common/UserRating';
 import Carrousel from '../components/common/Carrousel';
 import {getCurrencySymbol} from '../utils/i18n';
 import {Theme} from '../Theme';
+
 type Props = {
   route: RouteProp<RootStackParamList, 'Details'>;
 };
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: Theme.sizes.large,
     backgroundColor: Theme.colors.white,
-    paddingTop: 80,
+    paddingTop: 80, // Looks like a bug in reanimated causes the header not to take space.
   },
   section: {
     borderRadius: 8,
