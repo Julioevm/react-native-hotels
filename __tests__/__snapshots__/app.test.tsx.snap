@@ -64,7 +64,7 @@ exports[`App renders correctly 1`] = `
           color="#fff"
           direction="ltr"
           disableBackButtonMenu={false}
-          hidden={false}
+          hidden={true}
           hideBackButton={false}
           largeTitleHideShadow={false}
           title="Hotels"
@@ -98,6 +98,7 @@ exports[`App renders correctly 1`] = `
             <View
               style={
                 Object {
+                  "backgroundColor": "lavenderblush",
                   "flex": 1,
                 }
               }
@@ -105,31 +106,132 @@ exports[`App renders correctly 1`] = `
               <View
                 style={
                   Object {
-                    "backgroundColor": "lavenderblush",
-                    "flex": 1,
+                    "alignContent": "center",
+                    "backgroundColor": "lightcoral",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "overflow": "hidden",
+                    "padding": 8,
                   }
                 }
               >
-                <RCTScrollView
-                  getItem={[Function]}
-                  getItemCount={[Function]}
-                  keyExtractor={[Function]}
-                  onContentSizeChange={[Function]}
-                  onLayout={[Function]}
-                  onMomentumScrollBegin={[Function]}
-                  onMomentumScrollEnd={[Function]}
-                  onScroll={[Function]}
-                  onScrollBeginDrag={[Function]}
-                  onScrollEndDrag={[Function]}
-                  removeClippedSubviews={false}
-                  renderItem={[Function]}
-                  scrollEventThrottle={50}
-                  stickyHeaderIndices={Array []}
-                  viewabilityConfigCallbackPairs={Array []}
+                <View>
+                  <View
+                    animatedStyle={
+                      Object {
+                        "value": Object {},
+                      }
+                    }
+                    collapsable={false}
+                    layout={[Function]}
+                    style={
+                      Object {
+                        "backgroundColor": "white",
+                        "borderRadius": 32,
+                        "flexDirection": "row",
+                        "overflow": "hidden",
+                      }
+                    }
+                  >
+                    <View
+                      animatedStyle={
+                        Object {
+                          "value": Object {},
+                        }
+                      }
+                      collapsable={false}
+                      layout={[Function]}
+                    >
+                      <View
+                        accessibilityLabel="search"
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "backgroundColor": "white",
+                              "borderRadius": 32,
+                              "color": "white",
+                              "height": 44,
+                              "justifyContent": "center",
+                              "width": 44,
+                            },
+                            null,
+                          ]
+                        }
+                      >
+                        <Text>
+                          s
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                    }
+                  }
                 >
-                  <View />
-                </RCTScrollView>
+                  <View
+                    accessibilityLabel="Sort"
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "backgroundColor": "white",
+                          "borderRadius": 32,
+                          "color": "white",
+                          "height": 44,
+                          "justifyContent": "center",
+                          "width": 44,
+                        },
+                        Object {
+                          "marginLeft": 8,
+                        },
+                      ]
+                    }
+                  >
+                    <Text>
+                      S
+                    </Text>
+                  </View>
+                </View>
               </View>
+              <ActivityIndicator
+                size="large"
+                style={
+                  Object {
+                    "alignContent": "center",
+                    "flex": 1,
+                    "justifyContent": "center",
+                  }
+                }
+              />
             </View>
           </View>
         </View>

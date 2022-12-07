@@ -3,14 +3,22 @@ import React from 'react';
 import IconButton from '../common/IconButton';
 import SearchBar from './SearchBar';
 import {Theme} from '../../Theme';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {RootStackParamList} from '../../types';
+
+type NavigationProps = NativeStackNavigationProp<RootStackParamList>;
 
 export default function Header() {
+  const navigation = useNavigation<NavigationProps>();
+  function onPressSort() {
+    navigation.navigate('Sort');
+  }
   return (
     <View style={styles.header}>
       <SearchBar />
       <View style={styles.wrapper}>
-        <IconButton title="Filter" onPress={() => {}} spaced />
-        <IconButton title="Sort" onPress={() => {}} spaced />
+        <IconButton title="Sort" onPress={onPressSort} spaced />
       </View>
     </View>
   );

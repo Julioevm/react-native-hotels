@@ -32,4 +32,5 @@ export interface Hotel {
 export type RootStackParamList = {
   Hotels: undefined;
   Details: {hotel: Hotel};
+  Sort: undefined;
 };

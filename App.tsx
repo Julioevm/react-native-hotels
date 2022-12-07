@@ -6,6 +6,7 @@ import ListScreen from './screens/ListScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import {RootStackParamList} from './types';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import SortScreen from './screens/SortScreen';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -47,6 +48,14 @@ const App = () => {
                 fontWeight: 'bold',
               },
             })}
+          />
+          <Stack.Screen
+            name="Sort"
+            component={SortScreen}
+            options={{
+              headerShown: false,
+              presentation: 'modal',
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>
