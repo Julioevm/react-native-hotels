@@ -1,12 +1,12 @@
 import {Dimensions, Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import StarRating from '../StarRating';
-import UserRating from '../UserRating';
+import StarRating from '../common/StarRating';
+import UserRating from '../common/UserRating';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {Hotel, RootStackParamList} from '../../types';
 import {getCurrencySymbol} from '../../utils/i18n';
-import Carrousel from '../Carrousel';
+import Carrousel from '../common/Carrousel';
 
 const SPACING = 16;
 

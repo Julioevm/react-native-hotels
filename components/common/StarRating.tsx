@@ -14,7 +14,7 @@ export default function StarRating(props: Props) {
     return (
       <Image
         key={star}
-        source={require('../assets/star-small.png')}
+        source={require('../../assets/star-small.png')}
         style={[styles.star, {tintColor: color}]}
       />
     );

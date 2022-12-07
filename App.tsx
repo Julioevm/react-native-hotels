@@ -30,7 +30,13 @@ const App = () => {
             },
             headerTintColor: '#fff',
           }}>
-          <Stack.Screen name="Hotels" component={ListScreen} />
+          <Stack.Screen
+            name="Hotels"
+            component={ListScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
           <Stack.Screen
             name="Details"
             component={DetailsScreen}

@@ -1,32 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {View, ActivityIndicator, StyleSheet, FlatList} from 'react-native';
 import {Hotel} from '../../types';
 import ListItem from './ListItem';
 
-const ENDPOINT = 'https://run.mocky.io/v3/eef3c24d-5bfd-4881-9af7-0b404ce09507';
+interface Props {
+  data: Array<Hotel> | undefined;
+}
+const List = (props: Props) => {
+  const {data} = props;
 
-const List = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [data, setData] = useState<Array<Hotel> | undefined>(undefined);
-
-  const fetchData = async () => {
-    setIsLoading(true);
-    try {
-      const response = await fetch(ENDPOINT);
-      const json = await response.json();
-      setData(json);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  if (isLoading) {
+  if (!data) {
     return <ActivityIndicator style={styles.loading} size="large" />;
   }
   const renderItem = ({item}: {item: Hotel}) => <ListItem hotel={item} />;

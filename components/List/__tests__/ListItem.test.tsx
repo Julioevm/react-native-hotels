@@ -10,7 +10,7 @@ jest.mock('@react-navigation/native', () => {
   };
 });
 
-jest.mock('../../Carrousel.tsx', () => 'Carrousel');
+jest.mock('../../common/Carrousel.tsx', () => 'Carrousel');
 
 describe('ListItem', () => {
   it('should render a ListItem', async () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from '@testing-library/react-native';
 import App from '../App';
 
-jest.mock('../components/Carrousel.tsx', () => 'Carrousel');
+jest.mock('../components/common/Carrousel.tsx', () => 'Carrousel');
 
 jest.mock('@react-navigation/native', () => ({
   ...jest.requireActual('@react-navigation/native'),

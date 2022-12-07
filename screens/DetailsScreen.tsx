@@ -9,9 +9,9 @@ import {
 import React from 'react';
 import {RouteProp} from '@react-navigation/native';
 import {RootStackParamList} from '../types';
-import StarRating from '../components/StarRating';
-import UserRating from '../components/UserRating';
-import Carrousel from '../components/Carrousel';
+import StarRating from '../components/common/StarRating';
+import UserRating from '../components/common/UserRating';
+import Carrousel from '../components/common/Carrousel';
 import {getCurrencySymbol} from '../utils/i18n';
 type Props = {
   route: RouteProp<RootStackParamList, 'Details'>;
