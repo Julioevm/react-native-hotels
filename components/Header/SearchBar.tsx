@@ -1,5 +1,5 @@
 import {StyleSheet, View} from 'react-native';
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {TextInput} from 'react-native-gesture-handler';
 import Animated, {
   LightSpeedInLeft,
@@ -7,14 +7,24 @@ import Animated, {
   Layout,
 } from 'react-native-reanimated';
 import IconButton from '../common/IconButton';
+import FilterContext from '../../context/FilterContext';
 
 export default function SearchBar() {
   const [showSearchBar, setShowSearchBar] = useState(false);
-  const [searchText, setSearchText] = useState('');
+  const {filters, setFilters} = useContext(FilterContext);
 
   const handleSearchButtonPress = () => {
     setShowSearchBar(!showSearchBar);
   };
+
+  function setFilterText(text: string) {
+    setFilters(prevFilters => {
+      return {
+        ...prevFilters,
+        name: text,
+      };
+    });
+  }
 
   return (
     <View>
@@ -26,7 +36,8 @@ export default function SearchBar() {
             entering={LightSpeedInLeft}
             exiting={LightSpeedOutLeft}>
             <TextInput
-              onChangeText={setSearchText}
+              value={filters.name}
+              onChangeText={setFilterText}
               autoFocus={true}
               onSubmitEditing={handleSearchButtonPress}
             />
