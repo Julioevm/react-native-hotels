@@ -18,7 +18,7 @@ export default function Header() {
     <View style={styles.header}>
       <SearchBar />
       <View style={styles.wrapper}>
-        <IconButton title="Sort" onPress={onPressSort} spaced />
+        <IconButton variant="sort" onPress={onPressSort} spaced />
       </View>
     </View>
   );

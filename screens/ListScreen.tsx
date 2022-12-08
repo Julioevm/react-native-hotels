@@ -28,7 +28,6 @@ export default function ListScreen() {
       console.error(error);
     }
   };
-  console.log(filters);
 
   useEffect(() => {
     fetchData();

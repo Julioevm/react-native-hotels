@@ -60,7 +60,7 @@ exports[`App renders correctly 1`] = `
       >
         <RNSScreenStackHeaderConfig
           backButtonInCustomView={false}
-          backgroundColor="tomato"
+          backgroundColor="lightcoral"
           color="#fff"
           direction="ltr"
           disableBackButtonMenu={false}
@@ -143,7 +143,7 @@ exports[`App renders correctly 1`] = `
                       layout={[Function]}
                     >
                       <View
-                        accessibilityLabel="search"
+                        accessibilityLabel="Search"
                         accessible={true}
                         collapsable={false}
                         focusable={true}
@@ -160,9 +160,6 @@ exports[`App renders correctly 1`] = `
                           Array [
                             Object {
                               "alignItems": "center",
-                              "backgroundColor": "white",
-                              "borderRadius": 32,
-                              "color": "white",
                               "height": 44,
                               "justifyContent": "center",
                               "width": 44,
@@ -171,9 +168,19 @@ exports[`App renders correctly 1`] = `
                           ]
                         }
                       >
-                        <Text>
-                          s
-                        </Text>
+                        <Image
+                          source={
+                            Object {
+                              "testUri": "../../../assets/search.png",
+                            }
+                          }
+                          style={
+                            Object {
+                              "height": 24,
+                              "width": 24,
+                            }
+                          }
+                        />
                       </View>
                     </View>
                   </View>
@@ -203,35 +210,60 @@ exports[`App renders correctly 1`] = `
                       Array [
                         Object {
                           "alignItems": "center",
-                          "backgroundColor": "white",
-                          "borderRadius": 32,
-                          "color": "white",
                           "height": 44,
                           "justifyContent": "center",
                           "width": 44,
                         },
                         Object {
-                          "marginLeft": 8,
+                          "marginLeft": 12,
                         },
                       ]
                     }
                   >
-                    <Text>
-                      S
-                    </Text>
+                    <Image
+                      source={
+                        Object {
+                          "testUri": "../../../assets/sort.png",
+                        }
+                      }
+                      style={
+                        Object {
+                          "height": 24,
+                          "width": 24,
+                        }
+                      }
+                    />
                   </View>
                 </View>
               </View>
-              <ActivityIndicator
-                size="large"
+              <View
                 style={
                   Object {
-                    "alignContent": "center",
                     "flex": 1,
-                    "justifyContent": "center",
                   }
                 }
-              />
+              >
+                <RCTScrollView
+                  data={Array []}
+                  getItem={[Function]}
+                  getItemCount={[Function]}
+                  keyExtractor={[Function]}
+                  onContentSizeChange={[Function]}
+                  onLayout={[Function]}
+                  onMomentumScrollBegin={[Function]}
+                  onMomentumScrollEnd={[Function]}
+                  onScroll={[Function]}
+                  onScrollBeginDrag={[Function]}
+                  onScrollEndDrag={[Function]}
+                  removeClippedSubviews={false}
+                  renderItem={[Function]}
+                  scrollEventThrottle={50}
+                  stickyHeaderIndices={Array []}
+                  viewabilityConfigCallbackPairs={Array []}
+                >
+                  <View />
+                </RCTScrollView>
+              </View>
             </View>
           </View>
         </View>

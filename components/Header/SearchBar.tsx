@@ -44,7 +44,7 @@ export default function SearchBar() {
           </Animated.View>
         )}
         <Animated.View layout={Layout}>
-          <IconButton title="search" onPress={handleSearchButtonPress} />
+          <IconButton variant="search" onPress={handleSearchButtonPress} />
         </Animated.View>
       </Animated.View>
     </View>
