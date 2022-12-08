@@ -11,6 +11,10 @@ const iconVariants = {
     title: 'Sort',
     icon: require('../../assets/sort.png'),
   },
+  close: {
+    title: 'Close',
+    icon: require('../../assets/close.png'),
+  },
 };
 
 type IconVariant = keyof typeof iconVariants;

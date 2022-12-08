@@ -12,9 +12,16 @@ import FilterContext from '../../context/FilterContext';
 export default function SearchBar() {
   const [showSearchBar, setShowSearchBar] = useState(false);
   const {filters, setFilters} = useContext(FilterContext);
-
+  const buttonVariant = showSearchBar ? 'close' : 'search';
   const handleSearchButtonPress = () => {
     setShowSearchBar(!showSearchBar);
+    showSearchBar &&
+      setFilters(prevFilters => {
+        return {
+          ...prevFilters,
+          name: '',
+        };
+      });
   };
 
   function setFilterText(text: string) {
@@ -44,7 +51,10 @@ export default function SearchBar() {
           </Animated.View>
         )}
         <Animated.View layout={Layout}>
-          <IconButton variant="search" onPress={handleSearchButtonPress} />
+          <IconButton
+            variant={buttonVariant}
+            onPress={handleSearchButtonPress}
+          />
         </Animated.View>
       </Animated.View>
     </View>
