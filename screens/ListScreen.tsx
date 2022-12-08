@@ -1,22 +1,12 @@
 import {StyleSheet, View} from 'react-native';
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import List from '../components/List/List';
 import Header from '../components/Header/Header';
 import {Hotel} from '../types';
 import {Theme} from '../Theme';
+import FilterContext, {SortOrder} from '../context/FilterContext';
 
 const ENDPOINT = 'https://run.mocky.io/v3/eef3c24d-5bfd-4881-9af7-0b404ce09507';
-
-type SortOrder = 'ascending' | 'descending';
-
-type OrderCategory = 'stars' | 'rating' | 'price';
-
-interface Filters {
-  name: string;
-  sort: OrderCategory;
-  order: SortOrder;
-  price: Array<number>;
-}
 
 function sortOrder(order: SortOrder) {
   if (order === 'ascending') {
@@ -27,14 +17,8 @@ function sortOrder(order: SortOrder) {
 }
 export default function ListScreen() {
   const [data, setData] = useState<Array<Hotel> | undefined>(undefined);
-  const defaultFilter: Filters = {
-    name: '',
-    sort: 'price',
-    order: 'descending',
-    price: [0, 500],
-  };
+  const {filters} = useContext(FilterContext);
 
-  const [filters, setFilters] = useState<Filters>(defaultFilter);
   const fetchData = async () => {
     try {
       const response = await fetch(ENDPOINT);
