@@ -1,4 +1,4 @@
-import {StyleSheet, View} from 'react-native';
+import {ActivityIndicator, StyleSheet, View} from 'react-native';
 import React, {useContext, useEffect, useState} from 'react';
 import List from '../components/List/List';
 import Header from '../components/Header/Header';
@@ -18,14 +18,18 @@ function sortOrder(order: SortOrder) {
 export default function ListScreen() {
   const [data, setData] = useState<Array<Hotel> | undefined>(undefined);
   const {filters} = useContext(FilterContext);
+  const [loading, setLoading] = useState(false);
 
   const fetchData = async () => {
     try {
+      setLoading(true);
       const response = await fetch(ENDPOINT);
       const json = await response.json();
       setData(json);
     } catch (error) {
       console.error(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -58,7 +62,15 @@ export default function ListScreen() {
   return (
     <View style={styles.container}>
       <Header />
-      <List data={filteredData} />
+      {loading ? (
+        <ActivityIndicator
+          size={'large'}
+          color={Theme.colors.primary}
+          style={styles.loader}
+        />
+      ) : (
+        <List data={filteredData} />
+      )}
     </View>
   );
 }
@@ -67,5 +79,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Theme.colors.background,
+  },
+  loader: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
