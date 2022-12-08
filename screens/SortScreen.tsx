@@ -34,9 +34,11 @@ export default function SortScreen({navigation}: Props) {
           style={styles.picker}
           selectedValue={sort}
           onValueChange={itemValue => {
-            setFilters({
-              ...filters,
-              sort: itemValue,
+            setFilters(prevFilters => {
+              return {
+                ...prevFilters,
+                sort: itemValue,
+              };
             });
           }}>
           <Picker.Item label="Rating" value="rating" />
@@ -48,9 +50,11 @@ export default function SortScreen({navigation}: Props) {
           style={styles.picker}
           selectedValue={order}
           onValueChange={itemValue => {
-            setFilters({
-              ...filters,
-              order: itemValue,
+            setFilters(prevFilters => {
+              return {
+                ...prevFilters,
+                order: itemValue,
+              };
             });
           }}>
           <Picker.Item label="Ascending" value="ascending" />
@@ -69,9 +73,11 @@ export default function SortScreen({navigation}: Props) {
           maximumValue={500}
           step={1}
           onValueChange={value => {
-            setFilters({
-              ...filters,
-              price: value as number[],
+            setFilters(prevFilters => {
+              return {
+                ...prevFilters,
+                price: value as number[],
+              };
             });
           }}
           thumbTintColor={Theme.colors.primary}

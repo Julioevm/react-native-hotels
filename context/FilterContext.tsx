@@ -13,7 +13,7 @@ export interface Filters {
 
 interface FiltersContext {
   filters: Filters;
-  setFilters: (filters: Filters) => void;
+  setFilters: React.Dispatch<React.SetStateAction<Filters>>;
 }
 export const defaultFilter: Filters = {
   name: '',
