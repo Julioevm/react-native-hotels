@@ -30,7 +30,8 @@ export default function ListItem(props: Props) {
     <Pressable
       onPress={onPress}
       style={styles.container}
-      android_ripple={{color: Theme.colors.primary}}>
+      android_ripple={{color: Theme.colors.primary}}
+      testID="list-item">
       <View>
         <Carrousel gallery={gallery} width={width} />
         <View style={styles.info}>

@@ -34,7 +34,7 @@ export default function SearchBar() {
   }
 
   return (
-    <View>
+    <View testID="search-bar">
       <Animated.View layout={Layout} style={styles.searchWrapper}>
         {showSearchBar && (
           <Animated.View

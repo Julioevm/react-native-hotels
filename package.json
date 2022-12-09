@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "build:android": "cd android && ./gradlew assembleRelease",
-    "install:android":  "cd android && ./gradlew installRelease"
+    "install:android": "cd android && ./gradlew installRelease"
   },
   "dependencies": {
     "@miblanchard/react-native-slider": "^2.1.0",
@@ -60,6 +60,9 @@
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation|@miblanchard)"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
     ]
   }
 }

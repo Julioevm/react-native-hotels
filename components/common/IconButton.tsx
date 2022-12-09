@@ -32,7 +32,8 @@ export default function IconButton(props: Props) {
       android_ripple={{color: Theme.colors.secondary}}
       style={[styles.button, spaced ? styles.spaced : null]}
       onPress={onPress}
-      accessibilityLabel={iconVariants[variant].title}>
+      accessibilityLabel={iconVariants[variant].title}
+      testID={`icon-button-${variant}`}>
       <Image source={iconVariants[variant].icon} style={styles.icon} />
     </Pressable>
   );
