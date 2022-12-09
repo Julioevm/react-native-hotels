@@ -46,7 +46,6 @@ export default function SearchBar() {
               value={filters.name}
               onChangeText={setFilterText}
               autoFocus={true}
-              onSubmitEditing={handleSearchButtonPress}
             />
           </Animated.View>
         )}
