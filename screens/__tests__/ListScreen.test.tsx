@@ -29,4 +29,16 @@ describe('ListScreen', () => {
       expect(Screen.getAllByTestId('list-item')).toHaveLength(8),
     );
   });
+
+  it('should display the no data message', async () => {
+    fetchMock.mockOnce(JSON.stringify([]));
+    const app = render(
+      <NavigationContainer>
+        <ListScreen />
+      </NavigationContainer>,
+    );
+    await waitFor(() => {
+      expect(app.getByText('No results found :(')).toBeTruthy();
+    });
+  });
 });

@@ -115,15 +115,10 @@ exports[`App renders correctly 1`] = `
                   }
                 }
               >
-                <View>
+                <View
+                  testID="search-bar"
+                >
                   <View
-                    animatedStyle={
-                      {
-                        "value": {},
-                      }
-                    }
-                    collapsable={false}
-                    layout={[Function]}
                     style={
                       {
                         "backgroundColor": "white",
@@ -133,15 +128,7 @@ exports[`App renders correctly 1`] = `
                       }
                     }
                   >
-                    <View
-                      animatedStyle={
-                        {
-                          "value": {},
-                        }
-                      }
-                      collapsable={false}
-                      layout={[Function]}
-                    >
+                    <View>
                       <View
                         accessibilityLabel="Search"
                         accessible={true}
@@ -167,6 +154,7 @@ exports[`App renders correctly 1`] = `
                             null,
                           ]
                         }
+                        testID="icon-button-search"
                       >
                         <Image
                           source={
@@ -219,6 +207,7 @@ exports[`App renders correctly 1`] = `
                         },
                       ]
                     }
+                    testID="icon-button-sort"
                   >
                     <Image
                       source={
@@ -243,26 +232,3114 @@ exports[`App renders correctly 1`] = `
                   }
                 }
               >
-                <View
-                  style={
-                    {
-                      "alignContent": "center",
-                      "flex": 1,
-                      "justifyContent": "center",
-                    }
-                  }
-                >
-                  <Text
-                    style={
+                <RCTScrollView
+                  data={
+                    [
                       {
-                        "fontSize": 16,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    No results found :(
-                  </Text>
-                </View>
+                        "checkIn": {
+                          "from": "14:00",
+                          "to": "20:00",
+                        },
+                        "checkOut": {
+                          "from": "07:00",
+                          "to": "10:00",
+                        },
+                        "contact": {
+                          "email": "park_plaza@gmail.com",
+                          "phoneNumber": "+39 24322342",
+                        },
+                        "currency": "EUR",
+                        "gallery": [
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1499779963/Swindon_yjsrwz.jpg",
+                        ],
+                        "id": 12321,
+                        "location": {
+                          "address": "6 Hercules Road",
+                          "city": "London",
+                          "latitude": 51.49845,
+                          "longitude": -0.11343,
+                        },
+                        "name": "Park Plaza London Waterloo",
+                        "price": 120,
+                        "stars": 4,
+                        "userRating": 9.8,
+                      },
+                      {
+                        "checkIn": {
+                          "from": "12:00",
+                          "to": "20:00",
+                        },
+                        "checkOut": {
+                          "from": "07:00",
+                          "to": "10:00",
+                        },
+                        "contact": {
+                          "email": "belgrave@gmail.com",
+                          "phoneNumber": "+44 5477432",
+                        },
+                        "currency": "EUR",
+                        "gallery": [
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584265/g8wzbaqahffteguzal5d.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584267/zvpg4qui6pqp6t9lzmfz.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584269/storgpwbactbomqnevn5.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1491054438/Living_Area_26_7_mdxypk.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1491054438/Living_Area_25_6_rkyqhx.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1491054437/Guestroom_31_9_s2va2b.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1491054437/Guestroom_32_4_rpuq3s.jpg",
+                        ],
+                        "id": 12322,
+                        "location": {
+                          "address": "28-32 Belgrave Road Victoria",
+                          "city": "London",
+                          "latitude": 51.49241,
+                          "longitude": -0.14283,
+                        },
+                        "name": "Belgrave House Hotel",
+                        "price": 100,
+                        "stars": 4,
+                        "userRating": 7.8,
+                      },
+                      {
+                        "checkIn": {
+                          "from": "11:00",
+                          "to": "20:00",
+                        },
+                        "checkOut": {
+                          "from": "07:00",
+                          "to": "12:00",
+                        },
+                        "contact": {
+                          "email": "crowne_plaza@gmail.com",
+                          "phoneNumber": "+44 5432356",
+                        },
+                        "currency": "EUR",
+                        "gallery": [
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584108/w5c81p3mvlymgutaklvx.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584110/xcpweycgssuafcwelsfi.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584112/jszs6ir3v6rt7oz23wo2.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584114/hq2suefoj8jgtmsklzic.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584116/oiycgfo6nyihkw5mzaur.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584118/o91al0de2i3iofi3cpcl.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1602584120/jeu5kw5yck3eqiyudcgp.jpg",
+                        ],
+                        "id": 12323,
+                        "location": {
+                          "address": "1 Kings Cross Road",
+                          "city": "London",
+                          "latitude": 51.52647,
+                          "longitude": -0.11325,
+                        },
+                        "name": "Crowne Plaza LONDON - KINGS CROSS",
+                        "price": 200,
+                        "stars": 4,
+                        "userRating": 8.1,
+                      },
+                      {
+                        "checkIn": {
+                          "from": "12:00",
+                          "to": "20:00",
+                        },
+                        "checkOut": {
+                          "from": "07:00",
+                          "to": "10:00",
+                        },
+                        "contact": {
+                          "email": "dreamtel@gmail.com",
+                          "phoneNumber": "+44 435432",
+                        },
+                        "currency": "EUR",
+                        "gallery": [
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1609194083/n88jigk27jtmvekqunbv.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1609194083/hervrov1xtxxm1npx5pn.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1609194083/xeiu7cyj31kyyxendgfc.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1609194083/h5avqjhygpft5sfmquyh.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1609194083/coexau5reg97lngstk7r.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1609194083/eyfwzrkzgpodl8xy7g27.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1609194084/s7sul9tkrpcrtssibovl.jpg",
+                        ],
+                        "id": 12324,
+                        "location": {
+                          "address": "32-36 Hogarth Road Earl's Court",
+                          "city": "London",
+                          "latitude": 51.49338,
+                          "longitude": -0.1919,
+                        },
+                        "name": "Dreamtel London Kensington",
+                        "price": 400,
+                        "stars": 3,
+                        "userRating": 6.4,
+                      },
+                      {
+                        "checkIn": {
+                          "from": "13:00",
+                          "to": "24:00",
+                        },
+                        "checkOut": {
+                          "from": "09:00",
+                          "to": "11:00",
+                        },
+                        "contact": {
+                          "email": "info@absoluteyacht.com",
+                          "phoneNumber": "+44 333 400 6112",
+                        },
+                        "currency": "EUR",
+                        "gallery": [
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1601035242/dvx34hv6neyhla6547zi.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1601035241/hhzxxg4makd2hftm9qxs.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1601035241/yrpqzkra3rqcwuba3r6m.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1601035242/ar9frpn32o11wnztb5zw.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1601035242/aoujsd0w0xmw5hhl4c7j.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1601035241/vokkfyknalnjl7auoixu.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1601035241/fu96aga50efw3vyrxg00.jpg",
+                        ],
+                        "id": 12326,
+                        "location": {
+                          "address": "Behind Hertsmere Rd West India Quay",
+                          "city": "London",
+                          "latitude": 51.5068844,
+                          "longitude": -0.0218664,
+                        },
+                        "name": "Absolute Pleasure Yacht",
+                        "price": 20,
+                        "stars": 5,
+                        "userRating": 8.4,
+                      },
+                      {
+                        "checkIn": {
+                          "from": "15:00",
+                          "to": "22:00",
+                        },
+                        "checkOut": {
+                          "from": "11:00",
+                          "to": "14:00",
+                        },
+                        "contact": {
+                          "email": "contacts@zhotel.com",
+                          "phoneNumber": "+44 0800 083 4000",
+                        },
+                        "currency": "EUR",
+                        "gallery": [
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1585385209/t8bcs01xrouncqsja0kv.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1585385208/hqgbxaxlajgnrdolfvnm.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1585385208/v2v2kwee59x2cvx7mwbk.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1599034326/vrkkkhmnbyzscgtbhjtu.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1599034325/ckzg5zn0umnpe7yln7yl.jpg",
+                        ],
+                        "id": 12327,
+                        "location": {
+                          "address": "2 Orange Street",
+                          "city": "London",
+                          "latitude": 51.5090236,
+                          "longitude": -0.1314056,
+                        },
+                        "name": "The Z Hotel Piccadilly",
+                        "price": 250,
+                        "stars": 4,
+                        "userRating": 8.4,
+                      },
+                      {
+                        "checkIn": {
+                          "from": "16:00",
+                          "to": "20:00",
+                        },
+                        "checkOut": {
+                          "from": "10:00",
+                          "to": "12:00",
+                        },
+                        "contact": {
+                          "email": "contacts@seraphine.com",
+                          "phoneNumber": "+44 0800 8736 4000",
+                        },
+                        "currency": "EUR",
+                        "gallery": [
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1602647435/hb6zwn52nnnu8qhgjlet.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1584702056/bool6uurqftufzcm2jqj.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1584702056/egpdtmct9txubyux8lmp.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1584702056/emt88uypnhlqep0yfgq9.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1584702056/ypieyfzunwarqk2uw2iv.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1584702056/e13jhgy0h6a1tpzbkrbl.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/q_auto/v1584702056/ftfctloiytdjcvsyi0uv.jpg",
+                        ],
+                        "id": 12328,
+                        "location": {
+                          "address": "225 Kensington High Street",
+                          "city": "London",
+                          "latitude": 51.4992955,
+                          "longitude": -0.1973931,
+                        },
+                        "name": "Seraphine Kensington Olympia",
+                        "price": 120,
+                        "stars": 5,
+                        "userRating": 9.1,
+                      },
+                      {
+                        "checkIn": {
+                          "from": "17:00",
+                          "to": "23:00",
+                        },
+                        "checkOut": {
+                          "from": "9:00",
+                          "to": "13:00",
+                        },
+                        "contact": {
+                          "email": "service@londobridge.com",
+                          "phoneNumber": "+44 0810 57393 0873",
+                        },
+                        "currency": "EUR",
+                        "gallery": [
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1451487792/1461_ho_02_p_2048x1536_hehoe6.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1451487791/1461_ho_03_p_2048x1536_kdivf0.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1451487791/1461_ba_02_p_2048x1536_hne8f9.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1451487791/1461_ba_01_p_2048x1536_hqcad1.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1451487791/1461_ba_00_p_2048x1536_lvfoxj.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1451487791/1461_ho_00_p_2048x1536_grsooe.jpg",
+                          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1451487786/1461_ro_02_p_2048x1536_l2lapq.jpg",
+                        ],
+                        "id": 12329,
+                        "location": {
+                          "address": "71-79 Southwark Street",
+                          "city": "London",
+                          "latitude": 51.5052581,
+                          "longitude": -0.0991698,
+                        },
+                        "name": "Mercure London Bridge",
+                        "price": 109,
+                        "stars": 4,
+                        "userRating": 9.1,
+                      },
+                    ]
+                  }
+                  getItem={[Function]}
+                  getItemCount={[Function]}
+                  keyExtractor={[Function]}
+                  onContentSizeChange={[Function]}
+                  onLayout={[Function]}
+                  onMomentumScrollBegin={[Function]}
+                  onMomentumScrollEnd={[Function]}
+                  onScroll={[Function]}
+                  onScrollBeginDrag={[Function]}
+                  onScrollEndDrag={[Function]}
+                  removeClippedSubviews={false}
+                  renderItem={[Function]}
+                  scrollEventThrottle={50}
+                  stickyHeaderIndices={[]}
+                  viewabilityConfigCallbackPairs={[]}
+                >
+                  <View>
+                    <View
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "backgroundColor": "white",
+                            "borderRadius": 8,
+                            "margin": 16,
+                            "overflow": "hidden",
+                            "paddingBottom": 8,
+                          }
+                        }
+                        testID="list-item"
+                      >
+                        <View>
+                          <View>
+                            <View
+                              collapsable={false}
+                              handlerTag={1}
+                              handlerType="PanGestureHandler"
+                              onGestureHandlerEvent={[Function]}
+                              onGestureHandlerStateChange={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchStart={[Function]}
+                              style={
+                                [
+                                  {
+                                    "overflow": "hidden",
+                                  },
+                                  {
+                                    "height": 359,
+                                    "width": 718,
+                                  },
+                                  {},
+                                  {
+                                    "flexDirection": "row",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingHorizontal": 16,
+                                "paddingVertical": 8,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 16,
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              Park Plaza London Waterloo
+                            </Text>
+                            <View
+                              style={
+                                {
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "marginVertical": 8,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "gray",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </View>
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Text>
+                                  User Rating
+                                </Text>
+                                <View
+                                  style={
+                                    [
+                                      {
+                                        "alignItems": "center",
+                                        "borderRadius": 4,
+                                        "height": 18,
+                                        "justifyContent": "center",
+                                        "marginLeft": 6,
+                                        "width": 18,
+                                      },
+                                      {
+                                        "backgroundColor": "hsl(108, 100%, 70%)",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <Text
+                                    adjustsFontSizeToFit={true}
+                                    style={
+                                      {
+                                        "fontWeight": "bold",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                      }
+                                    }
+                                  >
+                                    9
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "textAlign": "right",
+                                }
+                              }
+                            >
+                              120 €
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "backgroundColor": "white",
+                            "borderRadius": 8,
+                            "margin": 16,
+                            "overflow": "hidden",
+                            "paddingBottom": 8,
+                          }
+                        }
+                        testID="list-item"
+                      >
+                        <View>
+                          <View>
+                            <View
+                              collapsable={false}
+                              handlerTag={2}
+                              handlerType="PanGestureHandler"
+                              onGestureHandlerEvent={[Function]}
+                              onGestureHandlerStateChange={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchStart={[Function]}
+                              style={
+                                [
+                                  {
+                                    "overflow": "hidden",
+                                  },
+                                  {
+                                    "height": 359,
+                                    "width": 718,
+                                  },
+                                  {},
+                                  {
+                                    "flexDirection": "row",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingHorizontal": 16,
+                                "paddingVertical": 8,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 16,
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              Belgrave House Hotel
+                            </Text>
+                            <View
+                              style={
+                                {
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "marginVertical": 8,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "gray",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </View>
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Text>
+                                  User Rating
+                                </Text>
+                                <View
+                                  style={
+                                    [
+                                      {
+                                        "alignItems": "center",
+                                        "borderRadius": 4,
+                                        "height": 18,
+                                        "justifyContent": "center",
+                                        "marginLeft": 6,
+                                        "width": 18,
+                                      },
+                                      {
+                                        "backgroundColor": "hsl(84, 100%, 70%)",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <Text
+                                    adjustsFontSizeToFit={true}
+                                    style={
+                                      {
+                                        "fontWeight": "bold",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                      }
+                                    }
+                                  >
+                                    7
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "textAlign": "right",
+                                }
+                              }
+                            >
+                              100 €
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "backgroundColor": "white",
+                            "borderRadius": 8,
+                            "margin": 16,
+                            "overflow": "hidden",
+                            "paddingBottom": 8,
+                          }
+                        }
+                        testID="list-item"
+                      >
+                        <View>
+                          <View>
+                            <View
+                              collapsable={false}
+                              handlerTag={3}
+                              handlerType="PanGestureHandler"
+                              onGestureHandlerEvent={[Function]}
+                              onGestureHandlerStateChange={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchStart={[Function]}
+                              style={
+                                [
+                                  {
+                                    "overflow": "hidden",
+                                  },
+                                  {
+                                    "height": 359,
+                                    "width": 718,
+                                  },
+                                  {},
+                                  {
+                                    "flexDirection": "row",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingHorizontal": 16,
+                                "paddingVertical": 8,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 16,
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              Crowne Plaza LONDON - KINGS CROSS
+                            </Text>
+                            <View
+                              style={
+                                {
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "marginVertical": 8,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "gray",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </View>
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Text>
+                                  User Rating
+                                </Text>
+                                <View
+                                  style={
+                                    [
+                                      {
+                                        "alignItems": "center",
+                                        "borderRadius": 4,
+                                        "height": 18,
+                                        "justifyContent": "center",
+                                        "marginLeft": 6,
+                                        "width": 18,
+                                      },
+                                      {
+                                        "backgroundColor": "hsl(96, 100%, 70%)",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <Text
+                                    adjustsFontSizeToFit={true}
+                                    style={
+                                      {
+                                        "fontWeight": "bold",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                      }
+                                    }
+                                  >
+                                    8
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "textAlign": "right",
+                                }
+                              }
+                            >
+                              200 €
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "backgroundColor": "white",
+                            "borderRadius": 8,
+                            "margin": 16,
+                            "overflow": "hidden",
+                            "paddingBottom": 8,
+                          }
+                        }
+                        testID="list-item"
+                      >
+                        <View>
+                          <View>
+                            <View
+                              collapsable={false}
+                              handlerTag={4}
+                              handlerType="PanGestureHandler"
+                              onGestureHandlerEvent={[Function]}
+                              onGestureHandlerStateChange={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchStart={[Function]}
+                              style={
+                                [
+                                  {
+                                    "overflow": "hidden",
+                                  },
+                                  {
+                                    "height": 359,
+                                    "width": 718,
+                                  },
+                                  {},
+                                  {
+                                    "flexDirection": "row",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingHorizontal": 16,
+                                "paddingVertical": 8,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 16,
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              Dreamtel London Kensington
+                            </Text>
+                            <View
+                              style={
+                                {
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "marginVertical": 8,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "gray",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "gray",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </View>
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Text>
+                                  User Rating
+                                </Text>
+                                <View
+                                  style={
+                                    [
+                                      {
+                                        "alignItems": "center",
+                                        "borderRadius": 4,
+                                        "height": 18,
+                                        "justifyContent": "center",
+                                        "marginLeft": 6,
+                                        "width": 18,
+                                      },
+                                      {
+                                        "backgroundColor": "hsl(72, 100%, 70%)",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <Text
+                                    adjustsFontSizeToFit={true}
+                                    style={
+                                      {
+                                        "fontWeight": "bold",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                      }
+                                    }
+                                  >
+                                    6
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "textAlign": "right",
+                                }
+                              }
+                            >
+                              400 €
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "backgroundColor": "white",
+                            "borderRadius": 8,
+                            "margin": 16,
+                            "overflow": "hidden",
+                            "paddingBottom": 8,
+                          }
+                        }
+                        testID="list-item"
+                      >
+                        <View>
+                          <View>
+                            <View
+                              collapsable={false}
+                              handlerTag={5}
+                              handlerType="PanGestureHandler"
+                              onGestureHandlerEvent={[Function]}
+                              onGestureHandlerStateChange={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchStart={[Function]}
+                              style={
+                                [
+                                  {
+                                    "overflow": "hidden",
+                                  },
+                                  {
+                                    "height": 359,
+                                    "width": 718,
+                                  },
+                                  {},
+                                  {
+                                    "flexDirection": "row",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingHorizontal": 16,
+                                "paddingVertical": 8,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 16,
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              Absolute Pleasure Yacht
+                            </Text>
+                            <View
+                              style={
+                                {
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "marginVertical": 8,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </View>
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Text>
+                                  User Rating
+                                </Text>
+                                <View
+                                  style={
+                                    [
+                                      {
+                                        "alignItems": "center",
+                                        "borderRadius": 4,
+                                        "height": 18,
+                                        "justifyContent": "center",
+                                        "marginLeft": 6,
+                                        "width": 18,
+                                      },
+                                      {
+                                        "backgroundColor": "hsl(96, 100%, 70%)",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <Text
+                                    adjustsFontSizeToFit={true}
+                                    style={
+                                      {
+                                        "fontWeight": "bold",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                      }
+                                    }
+                                  >
+                                    8
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "textAlign": "right",
+                                }
+                              }
+                            >
+                              20 €
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "backgroundColor": "white",
+                            "borderRadius": 8,
+                            "margin": 16,
+                            "overflow": "hidden",
+                            "paddingBottom": 8,
+                          }
+                        }
+                        testID="list-item"
+                      >
+                        <View>
+                          <View>
+                            <View
+                              collapsable={false}
+                              handlerTag={6}
+                              handlerType="PanGestureHandler"
+                              onGestureHandlerEvent={[Function]}
+                              onGestureHandlerStateChange={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchStart={[Function]}
+                              style={
+                                [
+                                  {
+                                    "overflow": "hidden",
+                                  },
+                                  {
+                                    "height": 359,
+                                    "width": 718,
+                                  },
+                                  {},
+                                  {
+                                    "flexDirection": "row",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingHorizontal": 16,
+                                "paddingVertical": 8,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 16,
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              The Z Hotel Piccadilly
+                            </Text>
+                            <View
+                              style={
+                                {
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "marginVertical": 8,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "gray",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </View>
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Text>
+                                  User Rating
+                                </Text>
+                                <View
+                                  style={
+                                    [
+                                      {
+                                        "alignItems": "center",
+                                        "borderRadius": 4,
+                                        "height": 18,
+                                        "justifyContent": "center",
+                                        "marginLeft": 6,
+                                        "width": 18,
+                                      },
+                                      {
+                                        "backgroundColor": "hsl(96, 100%, 70%)",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <Text
+                                    adjustsFontSizeToFit={true}
+                                    style={
+                                      {
+                                        "fontWeight": "bold",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                      }
+                                    }
+                                  >
+                                    8
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "textAlign": "right",
+                                }
+                              }
+                            >
+                              250 €
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "backgroundColor": "white",
+                            "borderRadius": 8,
+                            "margin": 16,
+                            "overflow": "hidden",
+                            "paddingBottom": 8,
+                          }
+                        }
+                        testID="list-item"
+                      >
+                        <View>
+                          <View>
+                            <View
+                              collapsable={false}
+                              handlerTag={7}
+                              handlerType="PanGestureHandler"
+                              onGestureHandlerEvent={[Function]}
+                              onGestureHandlerStateChange={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchStart={[Function]}
+                              style={
+                                [
+                                  {
+                                    "overflow": "hidden",
+                                  },
+                                  {
+                                    "height": 359,
+                                    "width": 718,
+                                  },
+                                  {},
+                                  {
+                                    "flexDirection": "row",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingHorizontal": 16,
+                                "paddingVertical": 8,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 16,
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              Seraphine Kensington Olympia
+                            </Text>
+                            <View
+                              style={
+                                {
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "marginVertical": 8,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </View>
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Text>
+                                  User Rating
+                                </Text>
+                                <View
+                                  style={
+                                    [
+                                      {
+                                        "alignItems": "center",
+                                        "borderRadius": 4,
+                                        "height": 18,
+                                        "justifyContent": "center",
+                                        "marginLeft": 6,
+                                        "width": 18,
+                                      },
+                                      {
+                                        "backgroundColor": "hsl(108, 100%, 70%)",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <Text
+                                    adjustsFontSizeToFit={true}
+                                    style={
+                                      {
+                                        "fontWeight": "bold",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                      }
+                                    }
+                                  >
+                                    9
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "textAlign": "right",
+                                }
+                              }
+                            >
+                              120 €
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "backgroundColor": "white",
+                            "borderRadius": 8,
+                            "margin": 16,
+                            "overflow": "hidden",
+                            "paddingBottom": 8,
+                          }
+                        }
+                        testID="list-item"
+                      >
+                        <View>
+                          <View>
+                            <View
+                              collapsable={false}
+                              handlerTag={8}
+                              handlerType="PanGestureHandler"
+                              onGestureHandlerEvent={[Function]}
+                              onGestureHandlerStateChange={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchStart={[Function]}
+                              style={
+                                [
+                                  {
+                                    "overflow": "hidden",
+                                  },
+                                  {
+                                    "height": 359,
+                                    "width": 718,
+                                  },
+                                  {},
+                                  {
+                                    "flexDirection": "row",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "height": 359,
+                                      "position": "absolute",
+                                      "width": 718,
+                                    },
+                                    {
+                                      "transform": [
+                                        {
+                                          "translateX": undefined,
+                                        },
+                                      ],
+                                    },
+                                  ]
+                                }
+                              />
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingHorizontal": 16,
+                                "paddingVertical": 8,
+                              }
+                            }
+                          >
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 16,
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              Mercure London Bridge
+                            </Text>
+                            <View
+                              style={
+                                {
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "marginVertical": 8,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "orange",
+                                      },
+                                    ]
+                                  }
+                                />
+                                <Image
+                                  source={
+                                    {
+                                      "testUri": "../../../assets/star-small.png",
+                                    }
+                                  }
+                                  style={
+                                    [
+                                      {
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                      {
+                                        "tintColor": "gray",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </View>
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                  }
+                                }
+                              >
+                                <Text>
+                                  User Rating
+                                </Text>
+                                <View
+                                  style={
+                                    [
+                                      {
+                                        "alignItems": "center",
+                                        "borderRadius": 4,
+                                        "height": 18,
+                                        "justifyContent": "center",
+                                        "marginLeft": 6,
+                                        "width": 18,
+                                      },
+                                      {
+                                        "backgroundColor": "hsl(108, 100%, 70%)",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  <Text
+                                    adjustsFontSizeToFit={true}
+                                    style={
+                                      {
+                                        "fontWeight": "bold",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                      }
+                                    }
+                                  >
+                                    9
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                            <Text
+                              style={
+                                {
+                                  "fontSize": 18,
+                                  "fontWeight": "bold",
+                                  "textAlign": "right",
+                                }
+                              }
+                            >
+                              109 €
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </RCTScrollView>
               </View>
             </View>
           </View>
