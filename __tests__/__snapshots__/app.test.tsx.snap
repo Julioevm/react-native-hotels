@@ -651,6 +651,7 @@ exports[`App renders correctly 1`] = `
                                   "fontWeight": "bold",
                                 }
                               }
+                              testID="list-item-name"
                             >
                               Park Plaza London Waterloo
                             </Text>
@@ -1016,6 +1017,7 @@ exports[`App renders correctly 1`] = `
                                   "fontWeight": "bold",
                                 }
                               }
+                              testID="list-item-name"
                             >
                               Belgrave House Hotel
                             </Text>
@@ -1381,6 +1383,7 @@ exports[`App renders correctly 1`] = `
                                   "fontWeight": "bold",
                                 }
                               }
+                              testID="list-item-name"
                             >
                               Crowne Plaza LONDON - KINGS CROSS
                             </Text>
@@ -1746,6 +1749,7 @@ exports[`App renders correctly 1`] = `
                                   "fontWeight": "bold",
                                 }
                               }
+                              testID="list-item-name"
                             >
                               Dreamtel London Kensington
                             </Text>
@@ -2111,6 +2115,7 @@ exports[`App renders correctly 1`] = `
                                   "fontWeight": "bold",
                                 }
                               }
+                              testID="list-item-name"
                             >
                               Absolute Pleasure Yacht
                             </Text>
@@ -2440,6 +2445,7 @@ exports[`App renders correctly 1`] = `
                                   "fontWeight": "bold",
                                 }
                               }
+                              testID="list-item-name"
                             >
                               The Z Hotel Piccadilly
                             </Text>
@@ -2805,6 +2811,7 @@ exports[`App renders correctly 1`] = `
                                   "fontWeight": "bold",
                                 }
                               }
+                              testID="list-item-name"
                             >
                               Seraphine Kensington Olympia
                             </Text>
@@ -3170,6 +3177,7 @@ exports[`App renders correctly 1`] = `
                                   "fontWeight": "bold",
                                 }
                               }
+                              testID="list-item-name"
                             >
                               Mercure London Bridge
                             </Text>

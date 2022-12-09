@@ -46,6 +46,7 @@ export default function SearchBar() {
               value={filters.name}
               onChangeText={setFilterText}
               autoFocus={true}
+              testID="search-bar-input"
             />
           </Animated.View>
         )}

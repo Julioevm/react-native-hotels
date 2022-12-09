@@ -49,6 +49,7 @@ exports[`ListItem should render a ListItem 1`] = `
             "fontWeight": "bold",
           }
         }
+        testID="list-item-name"
       >
         Park Plaza London Waterloo
       </Text>

@@ -35,7 +35,9 @@ export default function ListItem(props: Props) {
       <View>
         <Carrousel gallery={gallery} width={width} />
         <View style={styles.info}>
-          <Text style={styles.name}>{name}</Text>
+          <Text style={styles.name} testID="list-item-name">
+            {name}
+          </Text>
           <View style={styles.ratings}>
             <StarRating stars={stars} />
             <UserRating rating={userRating} />

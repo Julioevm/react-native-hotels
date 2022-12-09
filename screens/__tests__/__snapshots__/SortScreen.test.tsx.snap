@@ -57,6 +57,7 @@ exports[`SortScreen should render 1`] = `
             undefined,
           ]
         }
+        testID="sort-picker"
       />
     </View>
     <Text>
@@ -265,6 +266,7 @@ exports[`SortScreen should render 1`] = `
         "opacity": 1,
       }
     }
+    testID="apply"
   >
     <View
       style={

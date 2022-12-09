@@ -32,6 +32,7 @@ export default function SortScreen({navigation}: Props) {
         <Text>Sort by:</Text>
         <Picker
           style={styles.picker}
+          testID="sort-picker"
           selectedValue={sort}
           onValueChange={itemValue => {
             setFilters(prevFilters => {
@@ -87,6 +88,7 @@ export default function SortScreen({navigation}: Props) {
         title="Apply"
         onPress={onApplyPress}
         color={Theme.colors.primary}
+        testID="apply"
       />
       <Text style={styles.textButton} onPress={onClearPress}>
         Clear
