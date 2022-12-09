@@ -1,6 +1,6 @@
 import {useNavigation} from '@react-navigation/native';
 import {render, fireEvent} from '@testing-library/react-native';
-import {Hotel} from '../../../__mocks__/Hotel';
+import {Hotels} from '../../../__mocks__/Hotel';
 import ListItem from '../ListItem';
 import React from 'react';
 
@@ -14,7 +14,7 @@ jest.mock('../../common/Carrousel.tsx', () => 'Carrousel');
 
 describe('ListItem', () => {
   it('should render a ListItem', async () => {
-    const component = render(<ListItem hotel={Hotel} />);
+    const component = render(<ListItem hotel={Hotels[0]} />);
     expect(component).toMatchSnapshot();
   });
 
@@ -24,12 +24,12 @@ describe('ListItem', () => {
     };
     (useNavigation as jest.Mock).mockReturnValue(navigation);
 
-    const {getByText} = render(<ListItem hotel={Hotel} />);
+    const {getByText} = render(<ListItem hotel={Hotels[0]} />);
 
-    fireEvent.press(getByText('Hotel'));
+    fireEvent.press(getByText('Park Plaza London Waterloo'));
 
     expect(navigation.navigate).toHaveBeenCalledWith('Details', {
-      hotel: Hotel,
+      hotel: Hotels[0],
     });
   });
 });

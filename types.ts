@@ -16,7 +16,7 @@ interface Contact {
 }
 
 export interface Hotel {
-  id: string;
+  id: number;
   name: string;
   location: Location;
   stars: number;

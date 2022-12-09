@@ -1,5 +1,5 @@
 import React from 'react';
-import {render} from '@testing-library/react-native';
+import {render, cleanup} from '@testing-library/react-native';
 import App from '../App';
 
 jest.mock('../components/common/Carrousel.tsx', () => 'Carrousel');
@@ -12,8 +12,15 @@ jest.mock('@react-navigation/native', () => ({
 }));
 
 describe('App', () => {
-  it('renders correctly', () => {
+  afterEach(cleanup);
+
+  it('renders correctly', async () => {
     const {toJSON} = render(<App />);
     expect(toJSON()).toMatchSnapshot();
+  });
+
+  it('should display the no data message', () => {
+    const app = render(<App />);
+    expect(app.findByText('no data found :(')).toBeTruthy();
   });
 });

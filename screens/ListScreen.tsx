@@ -20,20 +20,20 @@ export default function ListScreen() {
   const {filters} = useContext(FilterContext);
   const [loading, setLoading] = useState(false);
 
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      const response = await fetch(ENDPOINT);
-      const json = await response.json();
-      setData(json);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(ENDPOINT);
+        const json = await response.json();
+        setData(json);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     fetchData();
   }, []);
 

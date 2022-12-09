@@ -15,7 +15,7 @@ exports[`ListItem should render a ListItem 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "backgroundColor": "white",
       "borderRadius": 8,
       "margin": 16,
@@ -27,15 +27,15 @@ exports[`ListItem should render a ListItem 1`] = `
   <View>
     <Carrousel
       gallery={
-        Array [
-          "https://picsum.photos/200/300",
+        [
+          "https://res.cloudinary.com/lastminute/image/upload/t_OSE_redes_item_view/v1499779963/Swindon_yjsrwz.jpg",
         ]
       }
       width={718}
     />
     <View
       style={
-        Object {
+        {
           "paddingHorizontal": 16,
           "paddingVertical": 8,
         }
@@ -43,17 +43,17 @@ exports[`ListItem should render a ListItem 1`] = `
     >
       <Text
         style={
-          Object {
+          {
             "fontSize": 16,
             "fontWeight": "bold",
           }
         }
       >
-        Hotel
+        Park Plaza London Waterloo
       </Text>
       <View
         style={
-          Object {
+          {
             "flexDirection": "row",
             "justifyContent": "space-between",
             "marginVertical": 8,
@@ -62,24 +62,24 @@ exports[`ListItem should render a ListItem 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "flexDirection": "row",
             }
           }
         >
           <Image
             source={
-              Object {
+              {
                 "testUri": "../../../assets/star-small.png",
               }
             }
             style={
-              Array [
-                Object {
+              [
+                {
                   "height": 16,
                   "width": 16,
                 },
-                Object {
+                {
                   "tintColor": "orange",
                 },
               ]
@@ -87,17 +87,17 @@ exports[`ListItem should render a ListItem 1`] = `
           />
           <Image
             source={
-              Object {
+              {
                 "testUri": "../../../assets/star-small.png",
               }
             }
             style={
-              Array [
-                Object {
+              [
+                {
                   "height": 16,
                   "width": 16,
                 },
-                Object {
+                {
                   "tintColor": "orange",
                 },
               ]
@@ -105,17 +105,17 @@ exports[`ListItem should render a ListItem 1`] = `
           />
           <Image
             source={
-              Object {
+              {
                 "testUri": "../../../assets/star-small.png",
               }
             }
             style={
-              Array [
-                Object {
+              [
+                {
                   "height": 16,
                   "width": 16,
                 },
-                Object {
+                {
                   "tintColor": "orange",
                 },
               ]
@@ -123,17 +123,17 @@ exports[`ListItem should render a ListItem 1`] = `
           />
           <Image
             source={
-              Object {
+              {
                 "testUri": "../../../assets/star-small.png",
               }
             }
             style={
-              Array [
-                Object {
+              [
+                {
                   "height": 16,
                   "width": 16,
                 },
-                Object {
+                {
                   "tintColor": "orange",
                 },
               ]
@@ -141,17 +141,17 @@ exports[`ListItem should render a ListItem 1`] = `
           />
           <Image
             source={
-              Object {
+              {
                 "testUri": "../../../assets/star-small.png",
               }
             }
             style={
-              Array [
-                Object {
+              [
+                {
                   "height": 16,
                   "width": 16,
                 },
-                Object {
+                {
                   "tintColor": "gray",
                 },
               ]
@@ -160,7 +160,7 @@ exports[`ListItem should render a ListItem 1`] = `
         </View>
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "flexDirection": "row",
             }
@@ -171,8 +171,8 @@ exports[`ListItem should render a ListItem 1`] = `
           </Text>
           <View
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "borderRadius": 4,
                   "height": 18,
@@ -180,8 +180,8 @@ exports[`ListItem should render a ListItem 1`] = `
                   "marginLeft": 6,
                   "width": 18,
                 },
-                Object {
-                  "backgroundColor": "hsl(48, 100%, 70%)",
+                {
+                  "backgroundColor": "hsl(108, 100%, 70%)",
                 },
               ]
             }
@@ -189,28 +189,28 @@ exports[`ListItem should render a ListItem 1`] = `
             <Text
               adjustsFontSizeToFit={true}
               style={
-                Object {
+                {
                   "fontWeight": "bold",
                   "textAlign": "center",
                   "textAlignVertical": "center",
                 }
               }
             >
-              4
+              9
             </Text>
           </View>
         </View>
       </View>
       <Text
         style={
-          Object {
+          {
             "fontSize": 18,
             "fontWeight": "bold",
             "textAlign": "right",
           }
         }
       >
-        100 €
+        120 €
       </Text>
     </View>
   </View>
