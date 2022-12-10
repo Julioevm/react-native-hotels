@@ -106,6 +106,7 @@ exports[`SortScreen should render 1`] = `
             undefined,
           ]
         }
+        testID="order-picker"
       />
     </View>
   </View>

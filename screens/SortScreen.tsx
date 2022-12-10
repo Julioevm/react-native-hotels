@@ -26,8 +26,6 @@ export default function SortScreen({navigation}: Props) {
     navigation.goBack();
   }
 
-  console.log(filters);
-
   return (
     <View style={styles.container}>
       <View>
@@ -52,6 +50,7 @@ export default function SortScreen({navigation}: Props) {
         <Text>Order:</Text>
         <Picker
           style={styles.picker}
+          testID="order-picker"
           selectedValue={order}
           onValueChange={itemValue => {
             setFilters(prevFilters => {
