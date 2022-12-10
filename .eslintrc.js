@@ -1,10 +1,19 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
+  extends: [
+    'plugin:react-native/all',
+    'plugin:react/recommended',
+    'eslint:recommended',
+  ],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react', 'react-native'],
   env: {
-    'jest/globals': true,
+    'react-native/react-native': true,
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   overrides: [
     {
@@ -16,4 +25,9 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };

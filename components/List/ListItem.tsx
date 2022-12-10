@@ -53,28 +53,26 @@ export default function ListItem(props: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    paddingBottom: Theme.sizes.small,
     margin: Theme.sizes.large,
-    borderRadius: 8,
-    backgroundColor: 'white',
     overflow: 'hidden',
+    paddingBottom: Theme.sizes.small,
   },
   info: {
     paddingHorizontal: Theme.sizes.large,
     paddingVertical: Theme.sizes.small,
-  },
-  ratings: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginVertical: Theme.sizes.small,
   },
   name: {
     fontSize: 16,
     fontWeight: 'bold',
   },
   price: {
-    textAlign: 'right',
     fontSize: 18,
     fontWeight: 'bold',
+    textAlign: 'right',
+  },
+  ratings: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginVertical: Theme.sizes.small,
   },
 });

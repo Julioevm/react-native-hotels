@@ -20,20 +20,19 @@ export default function ListScreen() {
   const {filters} = useContext(FilterContext);
   const [loading, setLoading] = useState(false);
 
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch(ENDPOINT);
+      const json = await response.json();
+      setData(json);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch(ENDPOINT);
-        const json = await response.json();
-        setData(json);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchData();
   }, []);
 
@@ -77,12 +76,12 @@ export default function ListScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: Theme.colors.background,
+    flex: 1,
   },
   loader: {
+    alignItems: 'center',
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
   },
 });

@@ -79,39 +79,39 @@ export default function DetailsScreen({route}: Props) {
 }
 
 const styles = StyleSheet.create({
+  buttonWrapper: {
+    marginTop: Theme.sizes.large,
+  },
   container: {
+    backgroundColor: Theme.colors.white,
     flex: 1,
     padding: Theme.sizes.large,
-    backgroundColor: Theme.colors.white,
     paddingTop: 80, // Looks like a bug in reanimated causes the header not to take space.
   },
-  section: {
-    borderRadius: 8,
-    backgroundColor: Theme.colors.background,
-    padding: Theme.sizes.small,
-    marginTop: Theme.sizes.small,
-  },
   middleWrapper: {
+    alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
     paddingVertical: Theme.sizes.small,
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginVertical: Theme.sizes.small,
   },
   price: {
     fontSize: 20,
     fontWeight: 'bold',
   },
+  section: {
+    backgroundColor: Theme.colors.background,
+    borderRadius: 8,
+    marginTop: Theme.sizes.small,
+    padding: Theme.sizes.small,
+  },
   subTitle: {
     fontSize: 16,
     fontWeight: 'bold',
   },
-  buttonWrapper: {
-    marginTop: Theme.sizes.large,
+  title: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginVertical: Theme.sizes.small,
   },
   underline: {
     textDecorationLine: 'underline',

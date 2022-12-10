@@ -31,19 +31,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  loading: {
-    flex: 1,
-    justifyContent: 'center',
-    alignContent: 'center',
-  },
   noResults: {
+    alignContent: 'center',
     flex: 1,
     justifyContent: 'center',
-    alignContent: 'center',
   },
   noResultsText: {
-    textAlign: 'center',
     fontSize: 16,
+    textAlign: 'center',
   },
 });
 

@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   star: {
-    width: 16,
     height: 16,
+    width: 16,
   },
 });

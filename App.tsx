@@ -16,6 +16,7 @@ const App = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
 
   return (
+    // eslint-disable-next-line react-native/no-inline-styles
     <GestureHandlerRootView style={{flex: 1}}>
       <FilterContext.Provider value={{filters, setFilters}}>
         <NavigationContainer>

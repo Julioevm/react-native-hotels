@@ -41,16 +41,16 @@ export default function IconButton(props: Props) {
 
 const styles = StyleSheet.create({
   button: {
-    width: 44,
+    alignItems: 'center',
     height: 44,
     justifyContent: 'center',
-    alignItems: 'center',
+    width: 44,
+  },
+  icon: {
+    height: 24,
+    width: 24,
   },
   spaced: {
     marginLeft: Theme.sizes.medium,
-  },
-  icon: {
-    width: 24,
-    height: 24,
   },
 });

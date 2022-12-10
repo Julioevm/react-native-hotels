@@ -32,20 +32,20 @@ export default function UserRating(props: Props) {
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: 'center',
     flexDirection: 'row',
-    alignItems: 'center',
-  },
-  ratingBox: {
-    width: 18,
-    height: 18,
-    borderRadius: 4,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginLeft: 6,
   },
   rating: {
     fontWeight: 'bold',
     textAlign: 'center',
     textAlignVertical: 'center',
+  },
+  ratingBox: {
+    alignItems: 'center',
+    borderRadius: 4,
+    height: 18,
+    justifyContent: 'center',
+    marginLeft: 6,
+    width: 18,
   },
 });

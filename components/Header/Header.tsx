@@ -26,12 +26,12 @@ export default function Header() {
 
 const styles = StyleSheet.create({
   header: {
+    alignContent: 'center',
+    backgroundColor: Theme.colors.secondary,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignContent: 'center',
     overflow: 'hidden',
     padding: Theme.sizes.small,
-    backgroundColor: Theme.colors.secondary,
   },
   wrapper: {
     flexDirection: 'row',

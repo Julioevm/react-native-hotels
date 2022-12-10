@@ -8,6 +8,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import IconButton from '../common/IconButton';
 import FilterContext from '../../context/FilterContext';
+import {Theme} from '../../Theme';
 
 export default function SearchBar() {
   const [showSearchBar, setShowSearchBar] = useState(false);
@@ -62,15 +63,15 @@ export default function SearchBar() {
 }
 
 const styles = StyleSheet.create({
-  searchWrapper: {
-    flexDirection: 'row',
-    backgroundColor: 'white',
-    borderRadius: 32,
-    overflow: 'hidden',
-  },
   searchBar: {
-    paddingHorizontal: 8,
     height: 44,
+    paddingHorizontal: 8,
     width: '85%', //Theres a better way to do this, Im sure.
+  },
+  searchWrapper: {
+    backgroundColor: Theme.colors.white,
+    borderRadius: 32,
+    flexDirection: 'row',
+    overflow: 'hidden',
   },
 });

@@ -545,8 +545,6 @@ exports[`App renders correctly 1`] = `
                         onStartShouldSetResponder={[Function]}
                         style={
                           {
-                            "backgroundColor": "white",
-                            "borderRadius": 8,
                             "margin": 16,
                             "overflow": "hidden",
                             "paddingBottom": 8,
@@ -839,8 +837,6 @@ exports[`App renders correctly 1`] = `
                         onStartShouldSetResponder={[Function]}
                         style={
                           {
-                            "backgroundColor": "white",
-                            "borderRadius": 8,
                             "margin": 16,
                             "overflow": "hidden",
                             "paddingBottom": 8,
@@ -1205,8 +1201,6 @@ exports[`App renders correctly 1`] = `
                         onStartShouldSetResponder={[Function]}
                         style={
                           {
-                            "backgroundColor": "white",
-                            "borderRadius": 8,
                             "margin": 16,
                             "overflow": "hidden",
                             "paddingBottom": 8,
@@ -1571,8 +1565,6 @@ exports[`App renders correctly 1`] = `
                         onStartShouldSetResponder={[Function]}
                         style={
                           {
-                            "backgroundColor": "white",
-                            "borderRadius": 8,
                             "margin": 16,
                             "overflow": "hidden",
                             "paddingBottom": 8,
@@ -1937,8 +1929,6 @@ exports[`App renders correctly 1`] = `
                         onStartShouldSetResponder={[Function]}
                         style={
                           {
-                            "backgroundColor": "white",
-                            "borderRadius": 8,
                             "margin": 16,
                             "overflow": "hidden",
                             "paddingBottom": 8,
@@ -2303,8 +2293,6 @@ exports[`App renders correctly 1`] = `
                         onStartShouldSetResponder={[Function]}
                         style={
                           {
-                            "backgroundColor": "white",
-                            "borderRadius": 8,
                             "margin": 16,
                             "overflow": "hidden",
                             "paddingBottom": 8,
@@ -2633,8 +2621,6 @@ exports[`App renders correctly 1`] = `
                         onStartShouldSetResponder={[Function]}
                         style={
                           {
-                            "backgroundColor": "white",
-                            "borderRadius": 8,
                             "margin": 16,
                             "overflow": "hidden",
                             "paddingBottom": 8,
@@ -2999,8 +2985,6 @@ exports[`App renders correctly 1`] = `
                         onStartShouldSetResponder={[Function]}
                         style={
                           {
-                            "backgroundColor": "white",
-                            "borderRadius": 8,
                             "margin": 16,
                             "overflow": "hidden",
                             "paddingBottom": 8,

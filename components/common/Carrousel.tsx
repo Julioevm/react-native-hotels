@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Image, StyleSheet, View} from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
+import {Theme} from '../../Theme';
 
 interface Props {
   gallery: string[];
@@ -36,17 +37,17 @@ function Carrousel(props: Props) {
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: 'center',
+    borderColor: Theme.colors.black,
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
-    borderColor: 'black',
   },
   image: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
     bottom: 0,
+    left: 0,
+    position: 'absolute',
     right: 0,
+    top: 0,
   },
 });
 
