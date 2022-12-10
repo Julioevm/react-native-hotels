@@ -26,6 +26,8 @@ export default function SortScreen({navigation}: Props) {
     navigation.goBack();
   }
 
+  console.log(filters);
+
   return (
     <View style={styles.container}>
       <View>
@@ -42,6 +44,7 @@ export default function SortScreen({navigation}: Props) {
               };
             });
           }}>
+          <Picker.Item label="None" value={undefined} />
           <Picker.Item label="Rating" value="rating" />
           <Picker.Item label="Stars" value="stars" />
           <Picker.Item label="Price" value="price" />
@@ -99,23 +102,23 @@ export default function SortScreen({navigation}: Props) {
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: 'center',
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
   },
   picker: {
     marginVertical: 15,
-    width: 250,
     padding: 10,
+    width: 250,
   },
   slider: {
     marginVertical: 15,
-    width: 250,
     padding: 10,
+    width: 250,
   },
   textButton: {
+    color: Theme.colors.primary,
     fontWeight: 'bold',
     margin: Theme.sizes.large,
-    color: Theme.colors.primary,
   },
 });

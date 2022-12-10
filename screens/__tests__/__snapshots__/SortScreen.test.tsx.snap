@@ -27,6 +27,12 @@ exports[`SortScreen should render 1`] = `
         items={
           [
             {
+              "label": "None",
+              "testID": undefined,
+              "textColor": undefined,
+              "value": undefined,
+            },
+            {
               "label": "Rating",
               "testID": undefined,
               "textColor": undefined,
