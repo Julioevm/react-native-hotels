@@ -1,5 +1,5 @@
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useCallback, useContext, useEffect, useState} from 'react';
 import List from '../components/List/List';
 import Header from '../components/Header/Header';
 import {Hotel} from '../types';
@@ -20,7 +20,7 @@ export default function ListScreen() {
   const {filters} = useContext(FilterContext);
   const [loading, setLoading] = useState(false);
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     try {
       setLoading(true);
       const response = await fetch(ENDPOINT);
@@ -31,10 +31,11 @@ export default function ListScreen() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [ENDPOINT]);
+
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   const filteredData =
     data
