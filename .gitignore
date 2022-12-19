@@ -65,3 +65,6 @@ buck-out/
 
 # vs code files
 .vscode/
+
+# Coverage reports
+coverage/
