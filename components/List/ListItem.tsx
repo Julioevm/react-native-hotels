@@ -53,6 +53,8 @@ export default function ListItem(props: Props) {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: Theme.colors.white,
+    borderRadius: Theme.sizes.medium,
     margin: Theme.sizes.large,
     overflow: 'hidden',
     paddingBottom: Theme.sizes.small,
